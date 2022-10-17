@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-Page</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#main{
+    width: 70%;
+    height: auto;
+  
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#apple{
+   height: 500px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+}
+#apple img{
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+
+}
+#cart{
+    margin-right: 10px;
+}
+    </style>
+</head>
+<body>
+    <h1>Cart-Page</h1>
+    <h2 >Total:- <span id="total">0</span></h2>
+  
+    <div id="main"></div>
+</body>
+</html>
+<script>
+    let container=document.querySelector("#main")
+let filter=document.querySelector("#selecat")
+// let cartdata=JSON.parse(localStorage.getItem("cartls")) || []
+let product=JSON.parse(localStorage.getItem("cartls")) || []
+let totalprice=document.querySelector("#total")
+
+
+displaytable(product)
+function displaytable(data){
+    container.innerHTML=null;
+    let total=0;
+    //totalPrice.innerText=0; 
+  data.forEach(function(el,index){
+      total+=Number(el.price)
+      let box=document.createElement("div")
+      box.id="apple"
+      let img=document.createElement("img");
+      img.src=el.url;
+      let name=document.createElement("h2");
+      name.innerText=el.name;
+      let price=document.createElement("p")
+      price.innerText=el.price;
+      let catagory=document.createElement("p")
+      catagory.innerText=el.catagory;
+     
+    
+   let delet=document.createElement("button")
+   delet.innerText="Remove"
+   delet.addEventListener("click",function(){
+   deletecart(el,index)
+   })
+      box.append(img,name,price,catagory,delet)
+      container.append(box)
+     totalprice.innerText=total
+  })
+
+ 
+}
+
+// chandra sir method
+function deletecart(el,index){
+  product.splice(index,1);
+
+  //we want to product not display after delet when we refresh our page so 95 line
+ // localStorage.setItem("cartls",JSON.stringify(product))
+  displaytable(product)
+}
+
+// function deletecart(index){
+//   let deletedprod=product.filter(function(el,i){
+//       return i !==index;
+//   })
+//   displaytable(deletedprod)
+// }
+</script>

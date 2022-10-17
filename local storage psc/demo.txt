@@ -1,0 +1,6 @@
+filter.addEventListener("change",function(){
+    let filterArray=product.filter(function(el){
+        return el.catagory===filter.value;
+    })
+   displaytable(filterArray)
+})

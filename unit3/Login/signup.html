@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Page</title>
+</head>
+<body>
+    <h1>Signup</h1>
+    <form >
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="password" id="pswd" placeholder="Put a strong Password">
+        <input type="submit">
+    </form>
+    <h3>Have an account <span><a href="login.html">Login</a></span>here</h3>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",signupfun)
+    let signData=JSON.parse(localStorage.getItem("LSDaTa")) || []
+function signupfun(){
+    event.preventDefault()
+    let obj={
+        name:document.querySelector("#name").value,
+        email:document.querySelector("#email").value,
+        password:document.querySelector("#pswd").value
+    }
+
+  if(obj.name==="" || obj.email==="" || obj.password===""){
+      alert("Fill All details")
+  }else{
+      signData.push(obj)
+      localStorage.setItem("LSDaTa",JSON.stringify(signData)) ;
+      alert("Signup Sucess")
+      window.location.href="login.html"
+  }
+}
+</script>

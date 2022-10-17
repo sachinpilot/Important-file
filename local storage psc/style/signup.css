@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 20PX;
+    color: blue;
+
+}
+form{
+width: 30%;
+height: 280px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+margin: auto;
+margin-top: 40px;
+background: #fff;
+background: rgb(203, 234, 235);
+/* background-image: url(bc.avif); */
+}
+#name,#email,#pswd{
+    width: 98%;
+   display: block;
+   margin: auto; 
+    height: 35px;
+   margin-bottom: 10px;
+   padding: 5PX;
+   font-style: italic;
+   border: none;
+   border: 1px solid #ef005d;
+   color: red;
+}
+#check{
+    margin-left:10px;
+    margin-bottom: 15px;
+}
+span a{
+   text-decoration: none;
+   color:  #ef005d;
+}
+#submit{
+    display: block;
+    margin: auto;
+    width: 30%;
+    border: none;
+    background: #ef005d;
+    color: white;
+    padding: 8px;
+}
+h4{
+    margin-left: 15px;
+}
+h4 a{
+    text-decoration: none;
+    color: #ef005d;
+}

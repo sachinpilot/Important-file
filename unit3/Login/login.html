@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form >
+        <input type="email" id="email" placeholder="Put Your Email">
+        <input type="password" placeholder="Put your password" id="pswd">
+        <input type="submit">
+    </form>
+
+    <h3>Are You new user ? <span><a href="signup.html">Signup</a></span>here</h3>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",loginfun)
+    let logDta=JSON.parse(localStorage.getItem("LSDaTa")) || [];
+    function loginfun(){
+        event.preventDefault()
+        let lobj={
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#pswd").value
+        }
+        let flag=false;
+        logDta.forEach(function(el){
+            if(lobj.email===el.email && lobj.password===el.password){
+                flag=true;
+                alert("login sucess");
+
+            }
+        })
+        if(flag==false){
+            alert("please check crdential")
+        }
+    }
+</script>                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+

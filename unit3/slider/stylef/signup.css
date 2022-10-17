@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+form{
+    width: 30%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/03/11/33/rose-2914093__340.png");
+    border-left: 2px solid #1F2833;
+    border-top: 2px solid #941750;
+    border-right: 2Px solid #F13C20;
+    margin: auto;
+    margin-top: 50px;
+}
+#int{
+    text-align: center;
+    font-style: italic;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #FF4136;
+}
+#int+p{
+  text-align: center;
+  margin-bottom: 10px;
+  color:#240090;
+}
+a{
+    text-decoration: none;
+    color: #FF4136;
+    font-style: italic;
+    font-weight: bold;
+}
+label{
+    margin-left: 10px;
+    color:#f014bc ;
+    font-weight: bold;
+}
+#email,#usr,#pswd{
+    width: 98%;
+    /* margin-left:5px; */
+    display: block;
+    margin: auto;
+    height: 25px;
+    padding: 5px;
+    color:   #161748;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1PX solid #FF652F;
+    background: transparent;
+   
+}
+#sum{
+  
+    height: 25px;
+    width:70% ;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+    background-color: #2F2FA2;
+    color: white;border-radius: 10px;
+}
+#sum+p{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+span{
+   
+    color: #C3073F;
+    font-style: oblique;
+    font-weight: bold;
+    margin-bottom: 20px ;
+}

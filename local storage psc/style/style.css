@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#main{
+    width: 70%;
+    height: auto;
+  
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#apple{
+   height: 500px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+}
+#apple img{
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+
+}
+
+select{
+    border: 2.1px solid red;
+}
+select option{
+    color: #ef005d;
+}

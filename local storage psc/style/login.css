@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,'poppins';
+}
+form{
+    width: 25%;
+    margin: auto;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top:30px;
+}
+h2{
+    text-align: center;
+    color: coral;
+    margin-bottom: 15px;
+}
+#email,#pswd{
+    width: 98%;
+    display: block;
+    margin: auto;
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid lightslategrey;
+}
+h4{
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h4 a{
+    text-decoration: none;
+    color: #f80000;
+  
+}
+#submit{
+    display: block;
+    margin: auto;
+    border: none;
+    width: 30%;
+    padding: 6px;
+    background: #ef005d;
+}
