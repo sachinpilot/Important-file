@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:transparent;
+}
+h1{
+    text-align: center;
+    font-style:italic;
+    font-size: 50px;
+    font-weight: bold;
+    color: #dba579;
+}
+input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+
+}
+button{
+    width: 150px;
+    display: block;
+    margin: auto;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    background:deepskyblue ;
+    border-radius: 10px;
+}
+#order-message{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color:green;
+}
+#gif{
+    display: none;
+    width: 200px;
+    height: 200px;
+    
+    margin: auto;
+    /* margin-left: 45px; */
+   margin-top: 15px;
+}
+#gif>img{
+    height: 100%;
+}

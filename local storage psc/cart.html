@@ -59,7 +59,7 @@ displaytable(product)
 function displaytable(data){
     container.innerHTML=null;
     let total=0;
-    //totalPrice.innerText=0; 
+    totalPrice.innerText=0; 
   data.forEach(function(el,index){
       total+=Number(el.price)
       let box=document.createElement("div")
