@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style/cart.css">
+  </head>
+  <body>
+    <!-- it is made by me if any case my cart is empty -->
+    <div id="empty_Cart">
+      <h1>Your Cart is Empty 😒😒</h1>
+      <a href="index.html"><p>Continue Shopping 🛒🛒</p></a>
+      <div >
+     <img src="https://media2.giphy.com/media/nKERd2uhn8hhe/200w.webp?cid=ecf05e478kqq19liv1apugq8fbdgac9z6lnf0xtbarqta552&rid=200w.webp&ct=g" alt="">
+
+      </div>
+    </div>
+    <h2 id="cart_total">
+      <!-- Cart total price in cart.html H2 tag with Id :- “cart_total” -->
+      <!-- Mention only price, don't add any extra text, only number should be present -->
+     <span></span>
+    </h2>
+
+    <!-- - Append the items in local storage to a div with Id :- “cart”
+         - Each item should have remove button with class : “remove”
+         - Checkout Button Id :- “checkout” -->
+         <div id="cart"></div>
+
+         <a href="checkout.html" id="checkout"><button>Checkout</button></a>
+
+  </body>
+</html>
+<script src="./scripts/cart.js"></script>
