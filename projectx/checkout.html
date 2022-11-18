@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="./style/checkout.css">
+</head>
+<body>
+    <h1>Total Bill:-<span id="BiLL"></span></h1>
+    <div id="check">
+      <div id="adrs">
+          <h2>Billing Details</h2>
+          <label for="First Name" class="lbl" >First Name <span>*</span></label>
+          <input type="text" class="uads" id="cName"></input>
+          <label for="Last Name" class="lbl" >Last Name <span>*</span></label>
+          <input type="text" class="uads" id="cLname"></input>
+          <select name="" id="selct">
+          
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Japan">Japan</option>
+              <option value="Isreal">Isreal</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Brazil">Brazil</option>
+              <option value="russ">Russia</option>
+          </select>
+          <label for="State" class="lbl" >State/UT<span>*</span></label>
+          <input type="text" class="uads" id="state"></input>
+          <label for="Town/city" class="lbl">Town/City<span>*</span></label>
+          <input type="text" class="uads" id="town"></input>
+          <label for="Street Adress" class="lbl">Street/Land Mark<span>*</span></label>
+          <input type="text" class="uads" id="strt"></input>
+          <label for="pincode" class="lbl">Pincode/ZIP</label><span>*</span></label>
+          <input type="number" class="uads" id="zip"></input>
+          <label for="Mobile" class="lbl">Mobile/Phone Nubmer</label><span>*</span></label>
+          <input type="number" placeholder="Mobile Number" class="uads" id="cnum"></input>
+          <label for="email" class="lbl">Email_adress</label><span>*</span></label>
+          <input type="email" class="uads" placeholder="email@abc" id="cemail"></input>
+          <!-- <input type="submit"> -->
+          <button id="lst" onclick="adrees()">-></button>
+      </div>
+      <div id="payment">
+            <h3>Card Details</h3>
+            <p>Card Nubmer <span>*</span></p>
+           
+            <input type="number" id="cnumber" placeholder=".... .... .... ....">
+            <p id="dpc">Card Number must be 16 digits</p>
+            <p>Card Holder Name <span>*</span></p>
+            <input type="text" id="chname" placeholder="Name SureName">
+            <p>Expiray Date <span>*</span></p>
+            <!-- <div id="date">  -->
+                <input type="month" id="month">
+                <!-- <input type="number" placeholder="- - - -" min="2000" max="2028" id="yer"> -->
+            <!-- </div> -->
+            <p>CSV Nubmer <span>*</span></p>
+            <input type="number" id="csv">
+            <p id="csvnu">Enter a Valid CSV number</p>
+            <p id="opt">----or----</p>
+            <div id="cod">
+                <input type="radio" >
+            <p>Cash On delivery</p>
+            </div>
+            <button id="paybtn" onclick="payMoney()"><a href="#">Procced To CheckOut</a></button>
+
+      </div>
+      
+    </div>
+
+       
+</body>
+</html>
+<script src="./script/checkout.js"></script>

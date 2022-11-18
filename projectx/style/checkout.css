@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#check{
+    width: 50%;
+    height: 530px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    margin-top: 20px;
+   display: flex;
+   padding-top: 20px;
+   background: 	#dadee4;
+   
+}
+#check h2{
+    text-align: center;
+    color: cornflowerblue;
+}
+#adrs{
+    width: 55%;
+    height: 98%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: 5px ;
+    margin-left: 10px;
+}
+select{
+    width: 95%;
+    height: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: crimson;
+    font-weight: bold;
+    padding: 5px;
+}
+option{
+    color: crimson;
+}
+#payment{
+    width: 55%;
+    height: 82%;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin:0px 50px;
+    margin-top: 20px;
+    
+}
+#payment h3{
+    text-align: center;
+    color:cornflowerblue ;
+}
+#payment p{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: grey;
+}
+#payment span{
+    color: #ff7500;
+}
+.uads{
+    width: 95%;
+    display: block;
+    margin: auto;
+    height: 30px;
+    border: 1px solid grey;
+
+}
+.lbl{
+ margin-left: 10px;
+ margin-top: 6px;
+ margin-bottom:10px;
+ color: gray;
+}
+ span{
+    color: red;
+}
+
+
+#cnumber,#chname,#csv{
+    width: 80%;
+    margin-left: 10px;
+    padding: 5px;
+}
+#cnumber{
+    font-weight: bold;
+    color: gray;
+    font-size:18px;
+}
+/* #date{
+    width: 88%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+} */
+#month{
+    border: none;
+    border-bottom: 1px solid grey;
+   margin-left: 10px;
+   padding: 5px;
+    
+}
+#payment button{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 85%;
+    padding: 5px;
+    border: none;
+    background: #FF00BF;
+}
+#payment button a{
+    text-decoration: none;
+    color:white ;
+    font-style: italic;
+    font-weight: bold;
+     
+}
+#cod{
+    display: flex;
+    margin-left: 10px;
+}
+#opt{
+    text-align: center;
+    color:black;
+    margin: 5px 0px;
+}
+.dpc{
+    display: none;
+}
+#lst{
+    display: block;
+    margin: auto;margin-top: 10px;
+    margin-bottom: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background: none;
+    border: 0.5px solid red;
+    background:lightblue;
+    color: red;
+    font-weight: bold;
+}

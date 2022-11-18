@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    width: 25%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+input{
+    width: 95%;
+    height: 25px;
+    padding: 5px
+    ;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#sub{
+    width: 70px;
+    height: 25px;
+    margin: auto;
+    padding: 5px;
+    background: none;
+    background: 		#282828;
+    border: none;
+    
+    border-radius: 5px;color:white;
+
+}
+#go a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+#alt{
+    display: none;
+    margin-bottom: 5px;
+}
